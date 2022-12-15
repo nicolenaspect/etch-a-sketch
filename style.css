@@ -1,0 +1,87 @@
+html {
+--main: #272d2d; 
+--secondary: #b8c5d6; 
+--sliderCircle: #23ce6b; 
+--main2: #213737; 
+--textStyle: #edf5fc; 
+--header: 600 3.1575rem/normal Work Sans; 
+--settingsStyle: 400 1.775rem/normal Merriweather; 
+--gridStyle: border: 1px solid #272D2D;
+}
+
+
+body {
+    flex-direction: column;
+    background-color: var(--main);
+}
+
+body,
+#gridBox,
+#settingsbox,
+#main {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    color: var(--textStyle);
+    font: var(--header);
+    margin-top: 4.5rem;
+}
+
+#settingsbox {
+    background-color: var(--main2);
+    width: 20.5rem;
+    height: 36.875rem;
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    flex-direction: column;
+    margin-left: 4.5rem;
+    gap: 24px;   
+    align-items: center;
+}
+
+#colorpicker {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-top: 1rem;
+
+}
+
+.settingsbutton {
+    width: 12.5rem;
+    height: 4.5rem;
+    border: px solid --secondary;
+    border-radius: 0.5rem;
+    font: var(--settingsStyle);
+    background-color: var(--main2);
+    color: var(--textStyle);
+}
+
+.pen {
+    background-color: var(--secondary);
+    color: var(--main2)
+}
+
+#main {
+    gap: 72px;
+}
+
+#gridBox {
+    background-color: var(--main2);   
+    width: 37rem;
+    height: 37rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 2px solid #B8C5D6;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridHolder {
+    width: 32rem;
+    height: 32rem;
+    background-color: var(--textStyle);
+}
