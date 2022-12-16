@@ -11,16 +11,25 @@
     <h1>Sketch A Sketch</h1>
     <div id="main">
         <div id="settingsbox">
-            <button id="colorpicker"></button>
+            <button data-jscolor="{value:'#FFFFFF'}" class="colorpicker">
             <button class="settingsbutton pen">Pen color</button>
             <button class="settingsbutton rainbow">Rainbow</button>
             <button class="settingsbutton erase">Erase</button>
             <button class="settingsbutton Clear">Clear</button>
         </div>
         <div id="gridBox">
-            <div class="gridHolder"></div>
+            <div class="gridHolder" >
+            </div>
         </div>
     </div>
+    <script src="jscolor.js"></script>
+        <script>
+        jscolor.presets.default = {
+            backgroundColor:'#B8C5D6', borderColor:'#23CE6B', borderWidth:0, 
+            closeButton:true, buttonColor:'#272D2D', position: 'top',
+            controlBorderColor:'rgba(0,0,0,0.29)', shadow:false
+        };
+        </script>
     <script src="script.js"></script>
 </body>
 </html>
