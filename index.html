@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch A Sketch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Sketch A Sketch</h1>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="main">
+      <h1>Sketch A Sketch</h1>
+      <div id="boxes">
         <div id="settingsbox">
-            <button data-jscolor="{value:'#FFFFFF'}" class="colorpicker">
-            <button class="settingsbutton pen">Pen color</button>
-            <button class="settingsbutton rainbow">Rainbow</button>
-            <button class="settingsbutton erase">Erase</button>
-            <button class="settingsbutton Clear">Clear</button>
+          <button class="settingsbutton rainbow">Black</button>
+          <button class="settingsbutton erase">Rainbow</button>
+          <button class="settingsbutton clear">Clear</button>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="0"
+              onload="min"
+              max="100"
+              value="0"
+              step="50"
+              class="slider"
+              id="myRange"
+              oninput="makeGrids()"
+            />
+          </div>
+          <div class="displaycontainer">
+            <p id="p"></p>
+          </div>
         </div>
         <div id="gridBox">
-            <div class="gridHolder" >
-            </div>
+          <div class="gridHolder"></div>
         </div>
+      </div>
     </div>
-    <script src="jscolor.js"></script>
-        <script>
-        jscolor.presets.default = {
-            backgroundColor:'#B8C5D6', borderColor:'#23CE6B', borderWidth:0, 
-            closeButton:true, buttonColor:'#272D2D', position: 'top',
-            controlBorderColor:'rgba(0,0,0,0.29)', shadow:false
-        };
-        </script>
+    <footer id="footer">
+      Copyright &copy; 2022 nicolenaspect
+      <img src="/images/logo-github.svg" alt="git-icon" />
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
