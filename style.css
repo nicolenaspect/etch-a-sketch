@@ -167,6 +167,9 @@ h1 {
     text-align: center;
     margin-top: auto;
     margin-bottom: 6px;
+    color: var(--secondary);
+    font-family: Merriweather, sans-serif;
+    font-size: 12px;
   }
 
   #boxes {
@@ -174,3 +177,5 @@ h1 {
     flex-direction: row;
     gap: 72px;
   }
+
+  
