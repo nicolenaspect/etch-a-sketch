@@ -178,4 +178,6 @@ h1 {
     gap: 72px;
   }
 
-  
+  ion-icon {
+    color: var(--secondary);
+  }
